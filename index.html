@@ -7,9 +7,25 @@
     <link href="./output.css" rel="stylesheet">
     <title>Drum Machine</title>
   </head>
-  <body>
+  <body class="justify-center">
+    <main class="flex flex-col w-4/5 mt-10">
     <h1 class="text-3xl font-bold underline my-1 mx-auto">
-      Hello world!
+      Drum Machine!
     </h1>
+    <div id="drum-machine" class="my-1 mx-auto grid grid-rows-4 grid-cols-4">
+      <!-- Drum pads will be inserted here -->
+      <drum-pad beat="foo"></drum-pad>
+      <drum-pad beat="bar"></drum-pad>
+      <drum-pad beat="foo"></drum-pad>
+      <drum-pad beat="bar"></drum-pad>
+      <drum-pad beat="foo"></drum-pad>
+      <drum-pad beat="bar"></drum-pad>
+      <drum-pad beat="foo"></drum-pad>
+      <drum-pad beat="bar"></drum-pad>
+      <div class="pad-button w-12 h-12 border-solid border-2 border-teal-200 m-2 p-1.5 hidden"></div>
+      <!-- ... more drum-pad elements ... -->
+    </div>
+    <script type="module">import DrumPad from './src/DrumPad.js'</script>
+    </main>
   </body>
 </html>
